@@ -1,0 +1,167 @@
+tree:
+  -
+    id: c3a7787f-6dad-4eb4-9893-57c1c3dc5bc3
+    entry: 72c7218e-1a9f-49a6-904d-ed8588e57869
+  -
+    id: c21a6b97-f7a1-47cf-9356-f3a9a2954050
+    title: Front-end
+    data:
+      navigation_image: navigation/nike-air-jordans.png
+      image_width_override: 2.1em
+    children:
+      -
+        id: 9d692c0e-df82-463d-af3c-b355a28d91dc
+        entry: af1de577-8f75-4623-a0a3-d4c4c49390aa
+      -
+        id: 814e613e-37fc-44c5-9aa4-083cd74eb66f
+        entry: be292d2b-dc0e-48dc-bce4-0058df27ccc6
+      -
+        id: 860e0c73-bc80-4bc1-9bab-def73cbba957
+        entry: e052ecb8-60d9-4afa-980e-ce128c301d70
+      -
+        id: 8c64ffd1-16be-4de0-9b09-1860973a5219
+        entry: 098cb1c5-94c2-4bc0-add7-9aad39951d67
+  -
+    id: affc2001-e4f5-4e06-9e00-58dd88edbb6e
+    title: 'Control Panel'
+    data:
+      navigation_image: navigation/rubiks-cube.png
+    children:
+      -
+        id: d5214ec3-c89f-4889-8f14-ed2b65a899d6
+        entry: cb8f4d8a-47b6-4567-9510-ed7d9ee9c037
+      -
+        id: 3b8785de-3898-4a94-be81-01c364d02123
+        entry: 83786f60-def6-11e9-aaef-0800200c9a66
+      -
+        id: 7af42e91-a4d7-454f-b9f2-ab19914f4dd3
+        entry: 06813e5d-158e-4318-aa4a-b29fd87d107f
+      -
+        id: e747b182-3ded-42fa-b713-34d6baec9b66
+        entry: 5900c99f-89b9-4ee3-834c-cb1b070146e4
+      -
+        id: 61e2cbcb-dd64-4bfd-af62-33e5a2f18b25
+        entry: 785ffa10-8b63-44b1-9da3-3837250cacbe
+      -
+        id: 0cdd7170-92ad-11ed-b05e-0800200c9a66
+        url: '/preferences#adding-fields'
+        title: Preferences
+      -
+        id: 9e649d17-d0b2-48a9-abf4-534c38c0c7ce
+        entry: ba2e6172-b4dc-443b-8230-b770dec1423c
+      -
+        id: f0e082dc-70e7-413a-8d92-4fab03ea447b
+        entry: 41e386b3-9df9-4d28-9338-8005399f953c
+      -
+        id: 7e4f5154-4499-40a4-929a-92fb81f10bb8
+        entry: aa6e0a79-9d3f-493b-92c9-df4d2257bc64
+      -
+        id: 270cf2ba-ceb6-499d-b1f0-e548a1aed282
+        entry: d0668b6e-915b-46da-863e-51fec54b02e2
+      -
+        id: 044b4ef5-5809-4bde-8988-ca680199926d
+        entry: b4b46ceb-9feb-4587-8f0d-2080511bf9e3
+      -
+        id: 5601026a-9c62-4804-8725-c468c5154c31
+        entry: a96676fe-0ec4-41f5-9205-2fe47988addb
+      -
+        id: 4ca9478d-e066-49e3-ba99-fc005b507609
+        entry: 52af4663-ebbd-467c-8659-9c7bb94cb7cc
+      -
+        id: 65babe8f-192b-449b-9c21-bc0008d531ba
+        entry: 3482755d-3d20-42d5-8680-301a1cb95965
+      -
+        id: f91be384-aa3a-4b15-9d6c-2b10e33f00d8
+        entry: 76abbb51-417c-460c-ad6c-c359329bfbaf
+      -
+        id: 5eba562c-9bdf-4623-9c55-a219956b8ccf
+        entry: 5eab02e3-c76b-4f44-a304-6a78877d099f
+  -
+    id: 73354789-cbf2-4bee-ab86-b289d748a64d
+    title: Javascript
+    data:
+      navigation_image: navigation/joystick.png
+      image_width_override: 1.75em
+    children:
+      -
+        id: b598494b-6e08-4d10-8fb7-7fd6f20a4a20
+        entry: 0782835d-1f44-4b19-99f4-2bb8ad28c7ba
+      -
+        id: 407dca74-15d5-41bb-bd98-a1ea4bd02b63
+        entry: b7519137-73b6-46c7-8432-da7725b1d9b4
+      -
+        id: e24ebb53-28fd-41bc-861c-f08a606092f4
+        entry: bbf752d3-ffdb-4ac9-a5c5-0b32e3db9d6f
+      -
+        id: 2517660b-fdf9-4ba0-8add-9dcb762041a5
+        entry: fc136da3-ba46-46e1-8443-e345d5b548ac
+      -
+        id: 658a74a4-85b6-49b4-81e2-c5fb312c69b1
+        entry: efcca509-5690-4201-88d7-74c542bb9900
+      -
+        id: 1e667ec1-a50d-4fd7-a6ed-cf5750a64dbf
+        entry: 28068f9a-f269-4646-87e4-881e5477558d
+      -
+        id: dbea0d9e-6a6a-42fd-83bf-d0d2eae539b6
+        entry: d84613d5-2b2b-465d-8f02-c71b6d2aadf1
+      -
+        id: 912c7cdd-8c3f-4824-8af5-95ad81f45fb5
+        entry: b80820bb-c2e8-475f-98bd-8ea0ef9f5339
+      -
+        id: 37a82f80-92ad-11ed-b05e-0800200c9a66
+        url: '/preferences#using-javascript'
+        title: Preferences
+  -
+    id: a6b12519-6352-452b-9daf-b7dd76880fb2
+    title: 'Core & Data'
+    data:
+      navigation_image: navigation/triforce.png
+    children:
+      -
+        id: 2a1a9358-2ad6-40d0-9022-78257abc64a9
+        entry: e7833062-e05c-42c9-ad35-dc5077f1f0b8
+      -
+        id: b7d1e399-e739-4575-9121-c37059d6ab4f
+        entry: 0267eb5a-f54b-4e3f-bef0-1f16762720b1
+      -
+        id: 0bc9381c-b65c-4267-8430-1bde81501461
+        entry: 290e9a74-7c6b-4fd0-a90a-23f7ac38d0c5
+      -
+        id: e4373616-8b57-4f3c-9eab-e56f7a7b881e
+        entry: ff397ebf-4b53-4dbd-b81b-0dec839e0e5f
+      -
+        id: 444caa5a-3de4-42ea-aa45-dbcaed5aaf71
+        entry: c3da9537-5d5f-4b84-a4be-882b89217151
+      -
+        id: 48880724-6101-45a8-9286-5ee646645583
+        entry: 6843f6e9-ac62-4128-8d50-887560f201ca
+      -
+        id: 10747789-6efc-427b-bd68-fbf0d5b704db
+        entry: 900414a8-f73a-46f0-82bd-b607767f5d5d
+      -
+        id: ae81c6b6-e582-44a4-a1e8-b85de3e06635
+        entry: fd34ca35-57d1-4d28-97f9-ba6801656b39
+      -
+        id: 6eafca01-ad4b-467f-bef7-3b8f8d187d89
+        entry: 73010f4f-bb62-4feb-a6ff-88031f488db8
+      -
+        id: 8636c400-9838-11ed-87cd-0800200c9a66
+        entry: 0eedd0bb-81a7-4813-b29f-672fe6697021
+  -
+    id: ba853a27-7829-4663-83e0-b762a96d109a
+    title: Addons
+    url: /extending/addons
+    data:
+      navigation_image: navigation/lego.png
+      image_width_override: 2.1em
+    children:
+      -
+        id: 9519cca9-4afd-4143-b949-090f209a57e4
+        entry: 5bd75435-806e-458b-872e-7528f24df7e6
+      -
+        id: a7f60530-f033-11ed-afc5-0800200c9a66
+        entry: 5f26a634-19ae-4413-8b9e-1ed9c2c76bb0
+        title: Vite
+      -
+        id: c08f0634-c324-4320-a698-e5098eaaf6a1
+        entry: 15db07e8-6e83-4b6e-89bb-d050b5d2c823

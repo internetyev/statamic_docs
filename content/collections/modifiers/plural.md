@@ -1,0 +1,44 @@
+---
+id: d464d979-7e57-40a6-8892-a08d08bd7ccf
+blueprint: modifiers
+modifier_types:
+  - array
+  - utility
+title: Plural
+---
+Get the plural form of an English word. Accepts a numerical parameter, either as a literal value or a variable, to control plurality. It's important to note that you should use the singular form of the word to ensure the best results.
+
+```yaml
+shopping_list:
+  - item: pickle
+    quantity: 1
+  - item: apple
+    quantity: 12
+  - item: donut
+    quantity: 500
+```
+
+::tabs
+
+::tab antlers
+```antlers
+Please pick up the following items:
+{{ shopping_list }}
+  - {{ quantity }} {{ item | plural($quantity) }}.
+{{ /shopping_list }}
+```
+::tab blade
+```blade
+Please pick up the following items:
+@foreach ($shopping_list as $item)
+  - {{ $item['quantity'] }} {{ Statamic::modify($item['item'])->plural($item['quantity']) }}.
+@endforeach
+```
+::
+
+```html
+Please pick up the following items:
+- 1 pickle
+- 12 apples
+- 500 donuts
+```

@@ -1,0 +1,34 @@
+---
+id: 62cb634b-06dd-4751-8d4f-3dd141d953e7
+blueprint: widgets
+title: 'Updater Widget'
+intro: 'Shows if there are any Statamic core or addon updates available.'
+nav_title: Updater
+screenshot: widgets/updater-v6.webp
+screenshot_dark: widgets/updater-v6-dark.webp
+options:
+  -
+    name: width
+    type: string
+    required: false
+    description: 'Width of the widget on the dashboard. Accepts `sm`, `md`, `lg`, and `full`. Default: `full`.'
+  -
+    name: sites
+    type: array
+    required: false
+    description: 'Determines the sites in which this widget should be displayed.'
+---
+## Configuring
+
+Widgets can be added to the dashboard by modifying the `widgets` array in the `config/statamic/cp.php` file.
+
+``` php
+// config/statamic/cp.php
+
+'widgets' => [
+  [ // [tl! focus:start]
+      'type' => 'updater',
+      'width' => 'full',
+      'sites' => ['en', 'de', 'fr'],
+  ], // [tl! focus:end]
+],

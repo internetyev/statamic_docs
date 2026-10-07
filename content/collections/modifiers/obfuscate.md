@@ -1,0 +1,31 @@
+---
+id: 84aca464-65b1-4cc9-8bc9-e64b33797579
+blueprint: modifiers
+modifier_types:
+  - markup
+  - utility
+attributes: true
+title: Obfuscate
+---
+Replaces characters in a string with a mixture of HTML entities. The text appears unchanged in the browser. This is often used for email addresses, but bots that decode HTML can still read them.
+
+```yaml
+magic_word: Abracadabra
+```
+
+::tabs
+
+::tab antlers
+```antlers
+{{ magic_word | obfuscate }}
+```
+::tab blade
+```blade
+{!! Statamic::modify($magic_word)->obfuscate() !!}
+```
+::
+
+```html
+# visibly appears as Abracadabra
+A&#98;r&#97;&#99;&#x61;d&#97;&#98;&#114;&#97;
+```

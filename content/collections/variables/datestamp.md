@@ -1,0 +1,27 @@
+---
+id: 2a5f5263-e61b-47bb-8c45-c02cd49554d6
+blueprint: variables
+types:
+  - entry
+title: Datestamp
+description: Get the timestamp of the entry as an integer. Alias of `timestamp`.
+---
+Get the timestamp of the entry. This will be an integer.
+
+Alias of `timestamp`. Maybe calling it a datestamp makes more sense to you if you aren't using time-based entries.
+
+::tabs
+
+::tab antlers
+```antlers
+{{ datestamp }}
+```
+::tab blade
+```blade
+{{ $datestamp }}
+```
+::
+
+```html
+1425772800
+```

@@ -1,0 +1,36 @@
+---
+id: 8eac02d5-1fc1-477c-a571-4aba29f1b60e
+title: 'Load templates dynamically based on the URL'
+intro: 'Map URLs to view files with two route rules — prototype frontend layouts without setting up collections first.'
+template: page
+categories:
+  - development
+updated_by: 3a60f79d-8381-4def-a970-5df62f0f5d56
+updated_at: 1622821148
+---
+## The Snippet
+All you need to do is drop these route rules in your `routes/web.php` file. Everything else will work as usual – tags, modifiers, etc, and use the default `layout.antlers.html` layout.
+
+```php
+# routes/web.php
+
+use Statamic\View\View;
+
+Route::statamic('/', 'home');
+
+Route::get('{template}', function ($template) {
+    return View::make($template)->layout('layout');
+})->where('template', '(?!cp).+');
+```
+
+_Note: This route rule assumes the control panel login is `/cp` and you're using the default `layout.antlers.html` layout file. You can edit accordingly if you've customized these things. We trust you can figure out which thing to edit where. We believe in you.
+
+## Examples
+Here's this route rule in action.
+
+| URL | Template |
+|---|---|
+| `/` | `resources/views/home.antlers.html` |
+| `/design` | `resources/views/design.antlers.html` |
+| `/design/stuff` | `resources/views/design/stuff.antlers.html` |
+| `/design/your/popsicle` | `resources/views/design/your/popsicle.antlers.html` |

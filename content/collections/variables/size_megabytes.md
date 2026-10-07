@@ -1,0 +1,25 @@
+---
+id: 4acb45ef-dea2-483b-97c3-31faeb27b232
+blueprint: variables
+types:
+  - asset
+title: 'Size Megabytes'
+description: The file size of the asset in megabytes. Also available as `size_mb`.
+---
+The file size of the asset, in megabytes. Also available as `size_mb`.
+
+::tabs
+
+::tab antlers
+```antlers
+{{ size_megabytes }}
+```
+::tab blade
+```blade
+{{ $size_megabytes }}
+```
+::
+
+```html
+0.12
+```

@@ -1,0 +1,97 @@
+---
+id: c77b02b6-3ce5-40e0-964c-a669685c12d3
+blueprint: modifiers
+title: Trans
+---
+Retrieve a string from a language file in the current locale. It is the equivalent of the [trans and trans_choice methods](https://laravel.com/docs/localization) provided by Laravel.
+
+:::tip
+There's also a [tag](/tags/trans) version that you may prefer.
+:::
+
+## Usage {#usage}
+
+Get the `bar` string from the `lang/en/foo.php` translation file (where `en` is the current locale).
+
+```php
+<?php
+return [
+    'bar' => 'Bar!',
+    'welcome' => 'Welcome, :name!',
+    'apples' => 'There is one apple|There are :count apples',
+];
+```
+
+``` yaml
+key: 'foo.bar'
+this_many: 2
+```
+
+::tabs
+
+::tab antlers
+```antlers
+{{ key | trans }} or {{ "foo.bar" | trans }}
+```
+::tab blade
+```blade
+{{ trans($key) }} {{ trans('foo.bar') }}
+```
+::
+
+```html
+Bar!
+```
+
+## Replacements
+
+Parameter replacements are only supported in the [tag version](/tags/trans).
+
+## Pluralization {#pluralization}
+
+To pluralize, use the `trans_choice` modifier with the count as the parameter. You can use a number or a variable.
+
+::tabs
+
+::tab antlers
+```antlers
+{{ "foo.apples" | trans_choice(2) }}
+{{ "foo.apples" | trans_choice($this_many) }}
+```
+::tab blade
+```blade
+{{ trans_choice('foo.apples', 2) }}
+{{ trans_choice('foo.apples', $this_many) }}
+```
+::
+
+```html
+There are 2 apples
+```
+
+## Strings
+
+As you can see above, you may use the modifier on inline strings. Instead of translation keys, you can use simple strings.
+These will be referenced from `lang/fr.json` (where `fr` is the locale).
+
+``` json
+{
+  "Hello": "Bonjour"
+}
+```
+
+::tabs
+
+::tab antlers
+```antlers
+{{ "Hello" | trans }}
+```
+::tab blade
+```blade
+{{ trans('Hello') }}
+```
+::
+
+```html
+Bonjour
+```

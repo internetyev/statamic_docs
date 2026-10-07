@@ -1,0 +1,27 @@
+---
+id: d9ae0cd6-a94e-44d7-b748-5506fa2e5ae7
+blueprint: variables
+types:
+  - system
+title: 'Last Segment'
+description: Get the last segment of the current URL.
+---
+Since you don't always know how many segments your URL will have, you can always grab the last segment.
+
+Example URL: `/nestled/safely/under/our/tree`
+
+::tabs
+
+::tab antlers
+```antlers
+{{ last_segment }}
+```
+::tab blade
+```blade
+{{ $last_segment }}
+```
+::
+
+```html
+tree
+```

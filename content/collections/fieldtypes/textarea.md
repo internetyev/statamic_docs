@@ -1,0 +1,26 @@
+---
+title: Textarea
+description: |
+  A simple textarea field for managing longer, unformatted text.
+overview: |
+  A long textarea field that functions like a swimming pool for letters and numbers on a hot day. Everyone is welcome and they can stay as long as they want.
+options:
+  -
+    name: character_limit
+    type: integer
+    description: 'Set the maximum number of enterable characters. This is only a recommendation, not a hard limit. To enforce a hard limit, use the [`max`](https://laravel.com/docs/master/validation#rule-max) validation rule.'
+  -
+    name: placeholder
+    type: string
+    description: >
+      Set some default placeholder text.
+  -
+    name: rows
+    type: integer
+    description: >
+      Set the number of visible text rows. Defaults to `4`.
+screenshot: fieldtypes/screenshots/v6/textarea.webp
+screenshot_dark: fieldtypes/screenshots/v6/textarea-dark.webp
+id: 7c54484a-7ba5-4314-b9af-9d9a462090fc
+---
+

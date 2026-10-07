@@ -1,0 +1,43 @@
+---
+id: ee2da74a-0788-400f-804f-c85ad9b635c0
+blueprint: modifiers
+modifier_types:
+  - array
+  - math
+title: Sum
+---
+Returns the sum of all items in an array, optionally specified by a specific key.
+
+```yaml
+numbers:
+  - 5
+  - 10
+  - 20
+  - 40
+stats:
+  - player: Luke Skywalker
+    score: 750
+  - player: Wedge Antilles
+    score: 688
+  - player: Jar Jar Binks
+    score: 1425
+```
+
+::tabs
+
+::tab antlers
+```antlers
+{{ numbers | sum }}
+{{ stats | sum('score') }}
+```
+::tab blade
+```blade
+{{ Statamic::modify($numbers)->sum() }}
+{{ Statamic::modify($stats)->sum('score') }}
+```
+::
+
+```html
+75
+2863
+```

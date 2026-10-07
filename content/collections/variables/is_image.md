@@ -1,0 +1,29 @@
+---
+id: 89e75dec-7f33-4217-b040-dc2a18de5d83
+blueprint: variables
+types:
+  - asset
+title: 'Is Image'
+description: A boolean indicating whether the asset is an image.
+---
+A boolean for whether the asset is an image.
+
+::tabs
+
+::tab antlers
+```antlers
+{{ if is_image }}
+    <img src="{{ url }}" />
+{{ else }}
+    <a href="{{ url }}">Download</a>
+{{ /if }}
+```
+::tab blade
+```blade
+@if ($is_image)
+  <img src="{{ $url }}" />
+@else
+  <a href="{{ $url }}">Download</a>
+@endif
+```
+::

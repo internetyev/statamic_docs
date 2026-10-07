@@ -1,0 +1,18 @@
+title: Fieldtypes
+icon: fieldsets
+template: page
+layout: layout
+mount: 25f01cb5-1ca9-44a1-af1b-885b32b05cc8
+revisions: false
+route: '/fieldtypes/{slug}'
+sort_dir: asc
+date_behavior:
+  past: null
+  future: null
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
+inject:
+  view_model: App\ViewModels\Fieldtypes
