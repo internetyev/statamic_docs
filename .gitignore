@@ -1,0 +1,6 @@
+update.log
+.DS_Store
+
+# Claude Code memory - keep internal memory/notes out of the repo
+/MEMORY.md
+/memory/
