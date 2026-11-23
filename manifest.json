@@ -1,8 +1,8 @@
 {
   "source": "https://github.com/statamic/docs",
   "branch": "6.x",
-  "upstream_commit": "ff6c0a6d7f6b9b52b9221a4d83f86dcd03f681bb",
-  "upstream_commit_date": "2026-11-03T15:52:43+00:00",
+  "upstream_commit": "d8ed860abea38827e673ea03625fb268cb6b498c",
+  "upstream_commit_date": "2026-11-20T18:21:05+00:00",
   "files": 682,
   "markdown_files": 635
 }
